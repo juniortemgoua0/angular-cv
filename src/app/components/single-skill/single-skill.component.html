@@ -1,0 +1,135 @@
+<div class="d_personnal d_skill" id="0" data-bs-toggle="modal" data-bs-target="#exampleModal0">
+  <span class="check"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-check-lg"
+                           viewBox="0 0 16 16">
+      <path
+        d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z">
+      </path>
+    </svg></span>
+  <div class="details">
+    <div class="skill">
+      <p class="skill_name CompetenceTitle0">{{skill.title}}</p>
+      <span class="star">
+       <app-stars [colored]="color"></app-stars>
+      </span>
+    </div>
+    <p class="lite_gray">{{skill.technology}}</p>
+    <app-progress-bar (onDispachColor)="getColor($event)" [level]="skill.level"></app-progress-bar>
+  </div>
+
+</div>
+
+<!-- Boite de dialogue qui affiche toutes les sous-competences liees a cette competence  -->
+<div class="modal fade" id="exampleModal0" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+     style="display: none;">
+  <div class="modal-dialog  modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel">Developpement front-end</h3>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="d_personnal" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <span class="check"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
+                                   class="bi bi-check-lg" viewBox="0 0 16 16">
+              <path
+                d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z">
+              </path>
+            </svg></span>
+          <div class="details">
+            <div class="skill">
+              <p class="skill_name">HTML5</p>
+              ( 95% )
+            </div>
+            <div class="switcher">
+              <div class="switcher_bar" style="width:95%;"></div>
+              <span class="switcher_circle" style="right: 5%;"></span>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="d_personnal" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <span class="check"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
+                                   class="bi bi-check-lg" viewBox="0 0 16 16">
+              <path
+                d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z">
+              </path>
+            </svg></span>
+          <div class="details">
+            <div class="skill">
+              <p class="skill_name">SASS</p>
+              ( 80% )
+            </div>
+            <div class="switcher">
+              <div class="switcher_bar" style="width:80%;"></div>
+              <span class="switcher_circle" style="right: 20%;"></span>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="d_personnal"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <span class="check"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
+                                   class="bi bi-check-lg" viewBox="0 0 16 16">
+              <path
+                d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z">
+              </path>
+            </svg></span>
+          <div class="details">
+            <div class="skill">
+              <p class="skill_name">VueJS</p>
+              ( 75% )
+            </div>
+            <div class="switcher">
+              <div class="switcher_bar" style="width:75%;"></div>
+              <span class="switcher_circle" style="right: 25%;"></span>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="d_personnal" id="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <span class="check"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
+                                   class="bi bi-check-lg" viewBox="0 0 16 16">
+              <path
+                d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z">
+              </path>
+            </svg></span>
+          <div class="details">
+            <div class="skill">
+              <p class="skill_name">Angular</p>
+              ( 85% )
+            </div>
+            <div class="switcher">
+              <div class="switcher_bar" style="width:85%;"></div>
+              <span class="switcher_circle" style="right: 15%;"></span>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="d_personnal" id="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <span class="check"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
+                                   class="bi bi-check-lg" viewBox="0 0 16 16">
+              <path
+                d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z">
+              </path>
+            </svg></span>
+          <div class="details">
+            <div class="skill">
+              <p class="skill_name">JavaFx</p>
+              ( 50% )
+            </div>
+            <div class="switcher">
+              <div class="switcher_bar" style="width:50%;"></div>
+              <span class="switcher_circle" style="right: 50%;"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

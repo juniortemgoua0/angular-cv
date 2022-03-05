@@ -1,0 +1,10 @@
+<div class="professional_experience card">
+  <div class="cover_editable_btn"></div>
+  <a href="#" class="editable_btn"><i class="bi bi-pencil-fill"></i> </a>
+  <app-experience-header title="Experience professionnelle"
+                         subtitle="Expertise en entreprise"
+                         image="/assets/img/batiment.png"></app-experience-header>
+  <app-experience-main>
+    <app-single-experience type="experience" *ngFor="let e of experiences"></app-single-experience>
+  </app-experience-main>
+</div>
