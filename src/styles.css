@@ -585,7 +585,7 @@ menu.open>.trigger svg {
 }
 
 .switcher_bar {
-  width: 60%;
+  width: 0;
   background-color: var(--primary-color);
   height: inherit;
 }
