@@ -20,6 +20,8 @@ import { SearchBarComponent } from './components/search-bar/search-bar.component
 import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
 import { StarsComponent } from './components/stars/stars.component';
 import { SingleExperienceComponent } from './components/single-experience/single-experience.component';
+import {FormsModule} from "@angular/forms";
+import { EditSkillComponent } from './components/edit-skill/edit-skill.component';
 
 
 @NgModule({
@@ -40,11 +42,13 @@ import { SingleExperienceComponent } from './components/single-experience/single
     ProgressBarComponent,
     StarsComponent,
     SingleExperienceComponent,
+    EditSkillComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        FormsModule
+    ],
   providers: [EditGuard , AuthService],
   bootstrap: [AppComponent]
 })

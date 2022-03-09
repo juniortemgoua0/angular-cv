@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {Skill} from "../../models/Skill";
 
 @Component({
   selector: 'app-single-skill',
@@ -7,12 +8,11 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class SingleSkillComponent implements OnInit {
 
- @Input() skill: any
+ @Input() skill!: Skill
   color : string = "red"
   constructor() { }
 
   ngOnInit(): void {
-    console.log("single skill ")
   }
 
   getColor(color: string){
